@@ -1,34 +1,81 @@
-nav{
-    text-align: center;
+body{
+    background: #dddddd
+}
+.container{
+    width: 100%;
+}
+.navigation{
     z-index: 1;
+    text-align: center;
 }
-nav a{
-    color: #000;
-    text-decoration: none;
-    cursor: default;
-    margin-right: 10px;
-}
-nav img{
-    width: 10%;
+.navigation img{
+    width: 15%;
     position: relative;
-    top: 15px;
+    top: 6px;
 }
-nav li{
+.navigation li{
     display: inline;
 }
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: default;
+    margin-right: 15px;
+}
+
+
 .main-img img{
 width: 100%;
 position: relative;
-top: 0px;
+top: -150px;
+z-index:-1;
+}
+
+
+.grid{
+    position: relative;
+    top: -150px;
+}
+.title{
+        text-align: center;
 }
 .showcase{
     display: inline-flex;
+    width: 100%;
+    margin-top: 0px;
+}
+.showcase-item{
+    flex: 1;
+    background: #ffffff;
+    margin: 25px;
+
 }
 .showcase img{
     width: 100%;
-    flex: 1;
 }
-.secondary-title{
-    text-align: center;
-    margin-top: 50px;
+.showcase h3,p{
+    margin: 5px 10px;
+}
+.read{
+    display: inline;
+    margin: 0px 10px;
+    margin-bottom: 10px;
+    background: rgb(21, 127, 214);
+    font-size: 18px;
+    float: right;
+    border: rgb(21, 127, 214) 3px solid;
+    border-radius: 5px;
+}
+.read a{
+    margin: 5px;
+}
+
+.about-img{
+    display: inline;
+}
+.about-img img{
+    width: 50%;
+}
+.about-details{
+    display: inline;
 }
