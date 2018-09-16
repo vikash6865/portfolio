@@ -4,7 +4,7 @@ body{
     padding: 0px;
 }
 h2{
-    color: #AA1E4A
+    color: #bf312f;
 }
 ul{
     margin: 0px 0px;
@@ -18,7 +18,6 @@ ul{
 .navigation{
     z-index: 1;
     text-align: center;
-    background: #14c1e8;
 }
 .navigation img{
     width: 15%;
@@ -35,12 +34,12 @@ a{
     margin-right: 15px;
 }
 
-/* .main-img img{
+.main-img img{
 width: 100%;
 position: relative;
 top: -150px;
 z-index:-1;
-} */
+}
 
 .sidebar{
     background: #eaeaea;
@@ -51,6 +50,8 @@ z-index:-1;
     flex: 1;
     display: flex;
     background: #fff;
+    position: relative;
+    top: -153px;
 }
 .main-content{
     flex: 1;
@@ -100,12 +101,15 @@ z-index:-1;
 }
 .about-details{
     text-align: center;
-    background: #264A73;
+    color: #d09382;
+    background: #584035;
     padding-left: 25px;
 }
 
 .footer{
     background: #404040;
     text-align: center;
+    /* position: relative;
+    top: -153px; */
 
 }
