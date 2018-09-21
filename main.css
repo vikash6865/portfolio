@@ -108,8 +108,44 @@ z-index:-1;
 
 .footer{
     background: #404040;
-    text-align: center;
+    display: flex;
+    flex: 1;
     /* position: relative;
-    top: -153px; */
+    top: -153px;
+    height: 153px; */
 
+}
+.newsletter{
+    flex:2;
+}
+.newsletter h2{
+    margin: 10px 0px;
+    margin-left: 20px;
+}
+.newsletter .mail{
+    margin-left: 20px;
+}
+.newsletter .button{
+    background: #bf312f;
+    border: 0;
+    width: 60px;
+    height: 27px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.connect-title h2{
+    margin: 10px 0px;
+}
+.social-item{
+    padding: 0;
+    display: inline;
+    list-style: none;
+}
+.copyright{
+    display: block;
 }
