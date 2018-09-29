@@ -83,6 +83,7 @@ z-index:-1;
     flex: 1;
     background: #ffffff;
     max-width: 250px;
+    margin: 3px;
     padding: 5px;
     border: #c2c2c2 solid 1px;
 }
@@ -99,6 +100,7 @@ z-index:-1;
 
 /* about styles */
 .about{
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     /* margin: 0px 0px; */
