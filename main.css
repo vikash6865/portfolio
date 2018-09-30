@@ -103,7 +103,8 @@ a {
 }
 .images-grid .grid-item {
   width: 25%;
-  flex-shrink: 0;
+  padding: 5px;
+  box-sizing: border-box;
 }
 .image-card {
   background: #ffffff;
