@@ -213,6 +213,7 @@ p {
   }
   .navigation .bars {
     display: inline-block;
+    cursor: pointer;
   }
   .navigation-list {
     display: none;
