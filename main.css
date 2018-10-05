@@ -93,8 +93,6 @@ a {
 .images-grid {
     display: flex;
     flex-wrap: wrap;
-  /* justify-content: space-evenly; */
-  /* margin: 20px 0px; */
 }
 .images-grid .grid-item {
   width: 25%;
@@ -146,13 +144,11 @@ p {
 .footer {
   background: #404040;
   display: flex;
-  /* position: relative;
-    top: -153px;*/
   flex-wrap: wrap;
+  height: 60vh;
 }
 .flex-item {
   flex: 1;
-  text-align: center;
   padding-bottom: 10px;
 }
 .newsletter h2 {
@@ -183,8 +179,26 @@ p {
   display: inline;
   list-style: none;
 }
+.input-label{
+  display: block;
+  color: #fff;
+}
+.flex-item input,textarea{
+  margin: 8px 0px;
+  border: 4px solid rgba(230,230,230, 0.4);
+  border-radius: 3px;
+  width: 97%;
+}
+.flex-item form{
+  margin: 10px 10px;
+}
+.flex-item .button{
+  background-color: royalblue;
+  border-color: rgba(0, 0, 0, 0)
+}
+
 .links h2 {
-  margin: 10px 0px;
+  margin: 10px;
 }
 .copyright {
   background: #555;
