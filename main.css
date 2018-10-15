@@ -3,6 +3,9 @@ body {
   margin: 0px;
   padding: 0px;
 }
+a {
+  display: inline-block;
+}
 h1,
 h2 {
   color: #bf312f;
@@ -24,6 +27,12 @@ ul {
   margin: 0px 0px;
   padding: 0;
 }
+.container {
+  max-width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .site-wrapper {
   display: flex;
   flex-direction: column;
@@ -36,6 +45,11 @@ ul {
   background-image: url("White\ Mount.jpg");
   background-size: cover;
   background-position: center;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navigation .bars {
   background: transparent;
@@ -58,7 +72,7 @@ ul {
   height: 50px;
   margin: 0 10px;
 }
-.navigation-list .logo > img {
+.navigation .logo > img {
   height: 100%;
 }
 
@@ -99,7 +113,8 @@ a {
 }
 .images-grid .grid-item {
   width: 25%;
-  flex-shrink: 0;
+  padding: 5px;
+  box-sizing: border-box;
 }
 .image-card {
   background: #ffffff;
@@ -221,6 +236,9 @@ p {
   .header {
     height: 50vh;
   }
+  .container {
+    max-width: 640px;
+  }
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -231,8 +249,9 @@ p {
   }
   .navigation .bars {
     display: inline-block;
+    cursor: pointer;
   }
-  .navigation-list .navigation-link {
+  .navigation-list {
     display: none;
   }
   .images-grid .grid-item {
@@ -241,7 +260,6 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-  
   .images-grid .grid-item {
     width: 100%;
   }
