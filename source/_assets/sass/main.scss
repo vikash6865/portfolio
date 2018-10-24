@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 body {
   background: #ffffff;
   margin: 0px;
@@ -48,6 +49,11 @@ ul {
   list-style: none;
   padding: 0;
   display: flex;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: .8rem;
   align-items: baseline;
   justify-content: center;
 }
@@ -89,18 +95,20 @@ a {
 .grid {
   background: #fff;
   padding: 20px 0px;
-}
+  width: 90%;
+  margin: auto;
 .grid-title {
   text-align: center;
 }
 .images-grid {
+  padding: 0;
+  margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
-  /* margin: 20px 0px; */
+  justify-content: space-between;
 }
 .images-grid .grid-item {
-  width: 25%;
+  width: 23%;
   flex-shrink: 0;
 }
 .image-card {
@@ -118,14 +126,53 @@ p {
 .images-grid p {
   color: #000;
 }
+}
 /* grid styles end */
 
 // blog styles
 .blog{
   height: 80vh;
-  text-align: center;
+  h2{
+    text-align: center;
+    margin: 0;
+    }
+.blog-highlight{
+  height: 80vh;
+  img{
+    background-size: cover;
+  }
 }
-
+.blog-container{
+  width:90%;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  .blog-card{
+      width: 50%;
+      display: flex;
+      // border: #000 1px solid;
+      .blog-image{
+        flex:1;
+        img{
+          width: 100%;
+        }
+      }
+      .blog-details{
+        flex:2;
+        h3, small{
+          margin: 5px;
+        }
+        p{
+          color:#000;
+          font-size: 14px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
 
 /* about styles */
 .about {
@@ -154,7 +201,7 @@ p {
 
 /* footer styles */
 .footer {
-  background: #404040;
+  background: #454545;
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px; 
@@ -163,15 +210,13 @@ p {
   flex: 1;
   padding-bottom: 10px;
 }
-.Brand{
-  background-color: #454545;
+// Brand styles
+.Brand address{
+  color: #fff;
+  font-size: 14px
 }
-.Brand h2{
-  margin: 10px 0px;
-}
-.Brand p{
-  margin: 0px;
-}
+// Brand styles ends here
+
 /* social contacts styles */
 .flex-item-container{
   margin: 0 40px;
@@ -179,11 +224,18 @@ p {
 .social-list{
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .social-item > svg{
   width: 25px;
 }
+
+.newsletter-head{
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: #393939 1px solid;
+}
+
 /* social contacts styles ends */
 
 /* Quick contact styles */

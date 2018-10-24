@@ -18,6 +18,7 @@
                 <li>
                     <a class="navigation-link" href="/About">About </a>
                 </li>
+                {{-- testimonials --}}
                 <li>
                     <a class="navigation-link" href="/Contact">Contact us</a>
                 </li>
@@ -76,6 +77,31 @@
             </div>
             <div class="blog">
                 <H2>.  Latest from the Blog  .</H2>
+                {{-- <div class="blog-highlight">
+                    <img src="./assets/images/road.jpg" alt="">
+                </div> --}}
+                <div class="blog-container">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="./assets/images/road.jpg" alt="">
+                        </div>
+                        <div class="blog-details">
+                            <h3>Blog-Title</h3>
+                            <small>Sep,5 2018 | 13:23:12</small>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo tempora exercitationem facilis debitis eos, incidunt quisquam</p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="./assets/images/road.jpg" alt="">
+                            </div>
+                            <div class="blog-details">
+                                <h3>Blog-Title</h3>
+                                <small>Sep,5 2018 | 13:23:12</small>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo tempora exercitationem facilis debitis eos, incidunt quisquam</p>
+                            </div>
+                    </div>
+                </div>
             </div>
             <div class="about">
                 <div class="about-details">
@@ -92,7 +118,14 @@
         <div class="flex-item Brand">
             <div class="flex-item-container">
                 <h2>Brand</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error sit vitae dignissimos vel? Molestias, illum. Dicta natus dolorum, fugit odio, id at accusamus nulla optio, eveniet quos necessitatibus dolorem ullam?</p>
+                <address>
+                        <strong>My Portfolio</strong><br>
+                        Kingsland House<br>
+                        122-124 Regent Street<br>
+                        London W1B 5SA, UK<br>
+                    <abbr title="Phone Number"><strong><i class="icon-phone"></i> </strong></abbr> <a href="tel:+442072879268"> +44 2072879268</a><br>
+                    <abbr title="Email Address"><strong></i></strong></abbr><a href="mailto:office@rehegoo.com"> office@rehegoo.com</a>
+                </address>
             </div>
         </div>
         <div class="flex-item social">
@@ -105,6 +138,11 @@
                     <li class="social-item">@include('_svgs.facebook')</li>
                     <li class="social-item">@include('_svgs.linkedin')</li>
                 </ul>
+                <h2 class="newsletter-head ">Newsletter</h2>
+                <form action="#" class="newsletter-form">
+                    <input type="email" name="email" class="mail control field" placeholder="Email">
+                    <input type="button" value="Join" name="join" class="button field">
+                </form>
             </div>
         </div>
         <div class="flex-item quick">
@@ -123,7 +161,7 @@
                     <div class="field">
                         <textarea name="message " id="msg" class="control" rows="10" placeholder="Message"></textarea>
                     </div>
-                    <input type="button" value="Join" name="Send" class="button">
+                    <input type="button" value="Send" name="Send" class="button">
                     
                 </form>
             </div>
