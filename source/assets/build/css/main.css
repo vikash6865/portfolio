@@ -247,7 +247,44 @@ a:hover {
 }
 
 .about-section .details-container {
-  margin: 0 100px;
+  margin: 0 200px;
+}
+
+.developer-section {
+  height: 100vh;
+  background: #fff;
+}
+
+.developer-section .dev-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 20px;
+}
+
+.developer-section .dev-container .dev-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0px 20px;
+}
+
+.developer-section .dev-container .dev-card img {
+  width: 100%;
+  background: #bf312f;
+  border-radius: 8px;
+}
+
+.developer-section .dev-container .dev-card .dev-title {
+  color: #00dcf0;
+}
+
+.developer-section .dev-container .dev-card .dev-date {
+  color: #818181;
+}
+
+.developer-section .dev-container .dev-card p {
+  color: #717171;
 }
 
 .main-img img {

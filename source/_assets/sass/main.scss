@@ -184,7 +184,34 @@ a:hover {
     font-size: 2rem;
   }
   .details-container {
-    margin: 0 100px;
+    margin: 0 200px;
+  }
+}
+
+.developer-section {
+  height: 100vh;
+  background: #fff;
+  .dev-container {
+    display: flex;
+    margin: 40px 20px;
+    .dev-card {
+      flex: 1;
+      margin: 0px 20px;
+      img {
+        width: 100%;
+        background: #bf312f;
+        border-radius: 8px;
+      }
+      .dev-title{
+        color: #00dcf0;
+      }
+      .dev-date{
+        color: #818181;
+      }
+      p{
+        color: #717171;
+      }
+    }
   }
 }
 .main-img img {
