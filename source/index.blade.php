@@ -5,16 +5,23 @@
 			
     <header class="header">
         <nav class="navigation">
-            <ul class="navigation-list">
+            <ul class="navigation-list nav-left">
                 <li>
-                    <a class="navigation-link" href="/Home">Home </a>
+                    <a class="navigation-link" href="/#">Home</a>
                 </li>
                 <li>
-                    <a class="navigation-link" href="/Blog">Blog </a>
+                    <a class="navigation-link" href="#">Galleries</a>
                 </li>
+                <li>
+                    <a class="navigation-link" href="/Stories">Stories</a>
+                </li>
+            </ul>
+            <ul class="nav-center">
                 <li> 
-                    <a class="logo" href="/Home"><img src="./assets/images/abc.png" alt="Logo"></a>
+                    <a class="logo" href="/Home">@include('_svgs/signature')</a>
                 </li>
+            </ul>
+            <ul class="navigation-list nav-right">
                 <li>
                     <a class="navigation-link" href="/About">About </a>
                 </li>
@@ -27,87 +34,70 @@
                 <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
             </button>
         </nav>
+        <div class="cover-category">
+            <div class="photography category">
+                <a href="/#">@include('_svgs/instagram')</a>
+            </div>
+            <div class="development category">
+                <a href="/#">@include('_svgs/instagram')</a>
+            </div>
+        </div>
     </header>
     
     <div class="main-area">
         <main class="main-content">
-            <div class="grid">
-                <div class="grid-title">
-                    <h2>. Explore .</h2>
-                </div>
-                <div class="images-grid">
-                    <div class="grid-item">
-                        <div class="image-card">
-                            <img src="./assets/images/Udaipur City.jpg" alt="">
-                            <h3>placename</h3>
-                            <div class="image-text">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dicta numquam</p>
-                            </div>
-                            
-                        </div>
+            <div class="gallery-section">
+                    <h1 class="section-title gallery">Recent Photos</h1>
+                    <div class="polaroid-container">
+                        
                     </div>
-                    <div class="grid-item">
-                        <div class="image-card">
-                            <img src="./assets/images/horror -1.jpg" alt="">
-                            <h3>placename</h3>
-                            <div class="image-text">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dicta numquam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="image-card">
-                            <img src="./assets/images/Blue Mount.jpg" alt="">
-                            <h3>placename</h3>
-                            <div class="image-text">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dicta numquam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="image-card">
-                            <img src="./assets/images/White Mount.jpg" alt="">
-                            <h3>placename</h3>
-                            <div class="image-text">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dicta numquam</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="blog">
-                <H2>.  Latest from the Blog  .</H2>
-                {{-- <div class="blog-highlight">
-                    <img src="./assets/images/road.jpg" alt="">
-                </div> --}}
-                <div class="blog-container">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <img src="./assets/images/road.jpg" alt="">
-                        </div>
-                        <div class="blog-details">
-                            <h3>Blog-Title</h3>
-                            <small>Sep,5 2018 | 13:23:12</small>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo tempora exercitationem facilis debitis eos, incidunt quisquam</p>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                            <div class="blog-image">
-                                <img src="./assets/images/road.jpg" alt="">
+            <div class="stories-section">
+                <h1 class="section-title stories">New Stories</h1>
+                <div class="stories-container">
+                    <div class="story-card">
+                        <div class="place-name">place</div>
+                        <img src="/assets/images/Udaipur City.jpg" alt="here is an image">
+                        <h3 class="story-title">Title</h3>
+                        <h5 class="story-date">22 July 2018</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut perspiciatis libero aperiam aspernatur? Optio, sed! Ab minima voluptatibus atque suscipit, provident labore quia eveniet consectetur voluptatum, hic impedit in officia.</p>
+                        <div class="read-more button">
+                                <a href="#">read</a>
                             </div>
-                            <div class="blog-details">
-                                <h3>Blog-Title</h3>
-                                <small>Sep,5 2018 | 13:23:12</small>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo tempora exercitationem facilis debitis eos, incidunt quisquam</p>
+                    </div>
+                    <div class="story-card">
+                            <div class="place-name">place</div>
+                            <img src="./assets/images/horror -1.jpg" alt="here is an image">
+                            <h3 class="story-title">Title</h3>
+                            <h5 class="story-date">22 July 2018</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut perspiciatis libero aperiam aspernatur? Optio, sed! Ab minima voluptatibus atque suscipit, provident labore quia eveniet consectetur voluptatum, hic impedit in officia.</p>
+                            <div class="read-more button">
+                                    <a href="#">read</a>
+                                </div>
+                    </div>
+                    <div class="story-card">
+                            <div class="place-name">place</div>
+                            <img src="./assets/images/Ghat Sunset.jpg" alt="here is an image">
+                            <h3 class="story-title">Title</h3>
+                            <h5 class="story-date">22 July 2018</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut perspiciatis libero aperiam aspernatur? Optio, sed! Ab minima voluptatibus atque suscipit, provident labore quia eveniet consectetur voluptatum, hic impedit in officia.</p>
+                            <div class="read-more button">
+                                <a href="#">read</a>
                             </div>
                     </div>
                 </div>
             </div>
-            <div class="about">
-                <div class="about-details">
-                    <h1>Hi! I'm Vikash!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laborum maiores culpa, at quam quidem. Fuga eveniet voluptatibus dolorem est odit nam, adipisci, alias cum temporibus id quidem provident cupiditate?
-                    </p>
+            <div class="about-section">
+                <h1 class="section-title about">About me</h1>
+                <div class="details-container">
+                    <div class="developer-details">
+                        <h2 class="developer">Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque error nobis reiciendis voluptas quam tenetur eaque adipisci repellendus pariatur corporis perspiciatis, minus ratione delectus deleniti alias. Quasi error ratione sequi.</p>
+                    </div>
+                    <div class="photographer-details">
+                        <h2 class="photographer">photographer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit non natus provident, laborum ullam, dolorum magnam hic, temporibus ad possimus tenetur culpa distinctio accusamus rerum amet! Ea, cupiditate officiis!</p>
+                    </div>
                 </div>
             </div>
         </main>
