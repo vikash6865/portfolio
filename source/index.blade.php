@@ -109,7 +109,7 @@
                         <h5 class="dev-date">22 July 2018</h5>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut perspiciatis libero aperiam aspernatur? Optio, sed! Ab minima voluptatibus atque suscipit, provident labore quia eveniet consectetur voluptatum, hic impedit in officia.</p>
                    </div>
-                   <div class="dev-card">
+                   <div class="dev-card mid">
                         <img src="./assets/images/work2.jpg" alt="here is an image">
                         <h3 class="dev-title">work </h3>
                         <h5 class="dev-date">22 July 2018</h5>
@@ -122,66 +122,46 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut perspiciatis libero aperiam aspernatur? Optio, sed! Ab minima voluptatibus atque suscipit, provident labore quia eveniet consectetur voluptatum, hic impedit in officia.</p>
                    </div>
                 </div>
-            </div>    
+            </div>
+            <div class="contact-section">
+                <div class="contact-illustration">
+                </div>
+                <div class="form-container">
+                    <h1 class="section-title">Contact</h1>
+                    <form action="#">
+                            <div class="field">
+                                {{-- <span class="icon">@include('_svgs.user')</span> --}}
+                                <input type="text" name="name"
+                                class="name control" placeholder="Full Name">
+                            </div>
+                            <div class="field">
+                                {{-- <span class="icon">@include('_svgs.envelope')</span> --}}
+                                <input type="email " name="email" class="mail control" placeholder="Email">
+                            </div>
+                            <div class="field">
+                                <textarea name="message " id="msg" class="control" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <input type="button" value="Send" name="Send" class="button">
+                            
+                        </form>
+                </div>
+            </div>
+
         </main>
     </div>
 </div> {{-- site-wrapper --}}
 <footer>
-    <div class="footer">
-        <div class="flex-item Brand">
-            <div class="flex-item-container">
-                <h2>Brand</h2>
-                <address>
-                        <strong>My Portfolio</strong><br>
-                        Kingsland House<br>
-                        122-124 Regent Street<br>
-                        London W1B 5SA, UK<br>
-                    <abbr title="Phone Number"><strong><i class="icon-phone"></i> </strong></abbr> <a href="tel:+442072879268"> +44 2072879268</a><br>
-                    <abbr title="Email Address"><strong></i></strong></abbr><a href="mailto:office@rehegoo.com"> office@rehegoo.com</a>
-                </address>
-            </div>
-        </div>
-        <div class="flex-item social">
-            <div class="flex-item-container">
-                <h2>Connect with us</h2>
-                <ul class="social-list">
-                    <li class="social-item">@include('_svgs.instagram')</li>
-                    <li class="social-item">@include('_svgs.google')</li>
-                    <li class="social-item">@include('_svgs.twitter')</li>
-                    <li class="social-item">@include('_svgs.facebook')</li>
-                    <li class="social-item">@include('_svgs.linkedin')</li>
-                </ul>
-                <h2 class="newsletter-head ">Newsletter</h2>
-                <form action="#" class="newsletter-form">
-                    <input type="email" name="email" class="mail control field" placeholder="Email">
-                    <input type="button" value="Join" name="join" class="button field">
-                </form>
-            </div>
-        </div>
-        <div class="flex-item quick">
-            <div class="flex-item-container">
-                <h2>Quick Contact</h2>
-                <form action="#">
-                    <div class="field">
-                        <span class="icon">@include('_svgs.user')</span>
-                        <input type="text" name="name"
-                        class="name control" placeholder="Full Name">
-                    </div>
-                    <div class="field">
-                        <span class="icon">@include('_svgs.envelope')</span>
-                        <input type="email " name="email" class="mail control" placeholder="Email">
-                    </div>
-                    <div class="field">
-                        <textarea name="message " id="msg" class="control" rows="10" placeholder="Message"></textarea>
-                    </div>
-                    <input type="button" value="Send" name="Send" class="button">
-                    
-                </form>
-            </div>
-        </div>
+    <div class="newsletter-section">
+        <h2  class="section-title">subscribe to our newsletter</h2   >
+            <form action="#">
+                <div class="field">
+                <input type="email" name="email" placeholder="Email">
+                </div>
+                <input type="button" value="join" name="join" class="button">
+            </form>
     </div>
-    <div class="copyright">
-        <p>copyright &copy; 2018 all rights reserved.</p>
+    <div class="footer-section">
+
     </div>
 </footer>
 @endsection
