@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-// $nav-color: #818181
 
 body {
   background: #ffffff;
@@ -9,8 +8,10 @@ body {
 * {
   box-sizing: border-box;
 }
+
 h1,
 h2 {
+  font-family: 'Caviar dreams';
   color: #00dcf0;
   word-spacing: 5px;
   letter-spacing: 3px;
@@ -25,7 +26,8 @@ h3 {
 }
 h5{
   color: #818181;
-  font-family: 'Code Light';
+  font-family: 'comfortaa';
+  letter-spacing: .1rem;
 }
 p {
   color: #717171;
@@ -104,14 +106,32 @@ a:hover {
 }
 .cover-category{
   display: flex;
-  justify-content: center;
+  text-align: center;
   svg{
     fill: #fff;
     stroke: #fff;
     width: 25%;
   }
+  svg:hover{
+    fill: #00dcf0;
+    stroke: #00dcf0;
+  }
   .category {
     flex: 1;
+    fill: #fff;
+    stroke: #fff;
+    h1{
+      color: #fff;
+      letter-spacing: .25rem;
+      font-size: 3rem;
+    }
+  }
+  .category:hover{
+    fill: #00dcf0;
+    stroke: #00dcf0;
+    h1{
+      color: #00dcf0;
+    }
   }
 }
 .section-title {
@@ -131,7 +151,6 @@ a:hover {
   background: #c6c6c6;
 }
 .stories-section {
-  height: 100vh;
   background: #fff;
   margin-bottom: 40px;
   .stories-container {
@@ -176,7 +195,6 @@ a:hover {
   }
 }
 .about-section {
-  height: 100vh;
   background: url("/assets/images/about.jpg");
   background-size: cover;
   .about {
@@ -185,15 +203,16 @@ a:hover {
   }
   .details-container {
     margin: 0 200px;
+    padding-bottom: 60px; 
   }
 }
 
 .developer-section {
-  height: 100vh;
   background: #fff;
   .dev-container {
     display: flex;
-    margin: 100px 20px;
+    padding: 50px 0;
+    margin: 0px 20px;
     .dev-card {
       flex: 1;
       margin: 0px 20px;
@@ -218,10 +237,8 @@ a:hover {
     }
   }
 }
-
 .contact-section {
   display: flex;
-  height: 80vh;
   .contact-illustration {
     flex: 1;
     background: #00dcf0;
@@ -230,8 +247,11 @@ a:hover {
     flex: 1;
     text-align: center;
     background: #818181;
+    form {
+      margin-bottom: 40px;
+    }
     .field input,textarea{
-      width: 75%;
+      width: 60%;
       margin: 10px auto ;
       padding: .5rem 1rem;
       border: #00dcf0 1px solid;
@@ -293,11 +313,37 @@ a:hover {
 footer {
   .newsletter-section{
     background: #fff;
-    height: 40vh;
+    padding-bottom: 40px;
   }
-  .footer-section{
+  .links-section{
     background: #717171;
-    height: 20vh;
+    color: #fff;
+    text-align: center;
+    h5{
+      margin: 0 auto;
+      padding-top: 15px; 
+      color: #fff;
+      
+    }
+    .link-list{
+      display: flex;
+      justify-content: space-around;
+      margin: auto; 
+      .link-item{
+        flex: 1;
+        width: 30px;
+        margin: 10px 0px;
+        svg{
+          width: 10%;
+          stroke: #fff;
+          fill: #fff;
+        }
+        svg:hover{
+          stroke: #00dcf0;
+          fill: #00dcf0;
+        }
+      }
+    }
   }
 }
 /* media queries starts here */

@@ -37,9 +37,11 @@
         <div class="cover-category">
             <div class="photography category">
                 <a href="/#">@include('_svgs/instagram')</a>
+                <h1>Photography</h1>
             </div>
             <div class="development category">
                 <a href="/#">@include('_svgs/instagram')</a>
+                <h1>Development</h1>
             </div>
         </div>
     </header>
@@ -146,7 +148,6 @@
                         </form>
                 </div>
             </div>
-
         </main>
     </div>
 </div> {{-- site-wrapper --}}
@@ -159,6 +160,16 @@
                 </div>
                 <input type="button" value="join" name="join" class="button">
             </form>
+    </div>
+    <div class="links-section">
+        <h5>follow:</h5>
+        <div class="link-list">
+            <a href="" class="link-item">@include('_svgs/instagram')</a>
+            <a href="" class="link-item">@include('_svgs/instagram')</a>
+            <a href="" class="link-item">@include('_svgs/instagram')</a>
+            <a href="" class="link-item">@include('_svgs/instagram')</a>
+            <a href="" class="link-item">@include('_svgs/instagram')</a>
+        </div>
     </div>
     <div class="footer-section">
 

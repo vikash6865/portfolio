@@ -11,6 +11,7 @@
 
 h1,
 h2 {
+  font-family: 'Caviar dreams';
   color: #00dcf0;
   word-spacing: 5px;
   letter-spacing: 3px;
@@ -27,7 +28,8 @@ h3 {
 
 h5 {
   color: #818181;
-  font-family: 'Code Light';
+  font-family: 'comfortaa';
+  letter-spacing: .1rem;
 }
 
 p {
@@ -142,9 +144,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 .cover-category svg {
@@ -153,10 +153,32 @@ a:hover {
   width: 25%;
 }
 
+.cover-category svg:hover {
+  fill: #00dcf0;
+  stroke: #00dcf0;
+}
+
 .cover-category .category {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.cover-category .category h1 {
+  color: #fff;
+  letter-spacing: .25rem;
+  font-size: 3rem;
+}
+
+.cover-category .category:hover {
+  fill: #00dcf0;
+  stroke: #00dcf0;
+}
+
+.cover-category .category:hover h1 {
+  color: #00dcf0;
 }
 
 .section-title {
@@ -179,7 +201,6 @@ a:hover {
 }
 
 .stories-section {
-  height: 100vh;
   background: #fff;
   margin-bottom: 40px;
 }
@@ -237,7 +258,6 @@ a:hover {
 }
 
 .about-section {
-  height: 100vh;
   background: url("/assets/images/about.jpg");
   background-size: cover;
 }
@@ -249,10 +269,10 @@ a:hover {
 
 .about-section .details-container {
   margin: 0 200px;
+  padding-bottom: 60px;
 }
 
 .developer-section {
-  height: 100vh;
   background: #fff;
 }
 
@@ -260,7 +280,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px 20px;
+  padding: 50px 0;
+  margin: 0px 20px;
 }
 
 .developer-section .dev-container .dev-card {
@@ -297,7 +318,6 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
 }
 
 .contact-section .contact-illustration {
@@ -315,8 +335,12 @@ a:hover {
   background: #818181;
 }
 
+.contact-section .form-container form {
+  margin-bottom: 40px;
+}
+
 .contact-section .form-container .field input, .contact-section .form-container textarea {
-  width: 75%;
+  width: 60%;
   margin: 10px auto;
   padding: .5rem 1rem;
   border: #00dcf0 1px solid;
@@ -386,12 +410,47 @@ a:hover {
 
 footer .newsletter-section {
   background: #fff;
-  height: 40vh;
+  padding-bottom: 40px;
 }
 
-footer .footer-section {
+footer .links-section {
   background: #717171;
-  height: 20vh;
+  color: #fff;
+  text-align: center;
+}
+
+footer .links-section h5 {
+  margin: 0 auto;
+  padding-top: 15px;
+  color: #fff;
+}
+
+footer .links-section .link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+footer .links-section .link-list .link-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 30px;
+  margin: 10px 0px;
+}
+
+footer .links-section .link-list .link-item svg {
+  width: 10%;
+  stroke: #fff;
+  fill: #fff;
+}
+
+footer .links-section .link-list .link-item svg:hover {
+  stroke: #00dcf0;
+  fill: #00dcf0;
 }
 
 /* media queries starts here */
