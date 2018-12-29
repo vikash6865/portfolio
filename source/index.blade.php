@@ -157,18 +157,21 @@
             <form action="#">
                 <div class="field">
                 <input type="email" name="email" placeholder="Email">
-                </div>
                 <input type="button" value="join" name="join" class="button">
+            </div>
             </form>
     </div>
     <div class="links-section">
         <h5>follow:</h5>
         <div class="link-list">
-            <a href="" class="link-item">@include('_svgs/instagram')</a>
-            <a href="" class="link-item">@include('_svgs/instagram')</a>
-            <a href="" class="link-item">@include('_svgs/instagram')</a>
-            <a href="" class="link-item">@include('_svgs/instagram')</a>
-            <a href="" class="link-item">@include('_svgs/instagram')</a>
+            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/google-plus')</a>
+            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/facebook')</a>
+            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/twitter')</a>
+            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/linkedin')</a>
+            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/youtube')</a>
+        </div>
+        <div class="copyright">
+            <p>copyright 2018 all rights reseverd</p>
         </div>
     </div>
     <div class="footer-section">

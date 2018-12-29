@@ -219,14 +219,13 @@ a:hover {
 
 .stories-section .stories-container .story-card .place-name {
   width: 40%;
-  height: 40px;
   color: #fff;
   background: #00dcf0;
   text-align: center;
   float: right;
   position: relative;
-  top: 40px;
-  z-index: 1;
+  top: 29px;
+  padding: 5px 0;
 }
 
 .stories-section .stories-container .story-card img {
@@ -252,7 +251,7 @@ a:hover {
   text-align: center;
   border-radius: 5px;
   width: 100px;
-  height: 40px;
+  padding: 10px;
 }
 
 .about-section {
@@ -346,6 +345,8 @@ a:hover {
   border-color: #00dcf0;
   color: #00dcf0;
   font-weight: bold;
+  -webkit-box-shadow: inset 0.5px 0.5px 2px 0.2px gray;
+          box-shadow: inset 0.5px 0.5px 2px 0.2px gray;
 }
 
 .button {
@@ -364,6 +365,10 @@ a:hover {
 
 .newsletter-section {
   text-align: center;
+}
+
+.newsletter-section .field .button {
+  color: #fff;
 }
 
 .newsletter-section .field input {
@@ -433,7 +438,8 @@ footer .links-section .link-list .link-item {
 }
 
 footer .links-section .link-list .link-item svg {
-  width: 25px;
+  width: 32px;
+  height: 32px;
   stroke: #fff;
   fill: #fff;
 }
@@ -441,6 +447,14 @@ footer .links-section .link-list .link-item svg {
 footer .links-section .link-list .link-item svg:hover {
   stroke: #00dcf0;
   fill: #00dcf0;
+}
+
+footer .copyright p {
+  text-align: end;
+  background: #606060;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 5px 10px;
 }
 
 /* media queries starts here */
