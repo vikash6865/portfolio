@@ -17,7 +17,7 @@ h2 {
   letter-spacing: 3px;
   margin-top: 0px;
   padding-top: 20px;
-  text-shadow: 2px 2px 5px #5050509c;
+  text-shadow: 1px 1px 5px #5050509c;
 }
 
 h3 {
@@ -245,6 +245,18 @@ a:hover {
   color: #717171;
 }
 
+.stories-section .stories-container .story-card .read-more:hover {
+  background: #fff;
+}
+
+.stories-section .stories-container .story-card .read-more:hover a {
+  color: #00dcf0;
+}
+
+.stories-section .stories-container .story-card a {
+  margin: 0;
+}
+
 .stories-section .stories-container .story-card .button {
   background: #00dcf0;
   color: #fff;
@@ -269,6 +281,10 @@ a:hover {
   padding-bottom: 60px;
 }
 
+.about-section .details-container .photographer {
+  text-align: end;
+}
+
 .developer-section {
   background: #fff;
 }
@@ -286,11 +302,12 @@ a:hover {
       -ms-flex: 1;
           flex: 1;
   margin: 0px 20px;
-  margin-top: 100px;
+  margin-top: 125px;
 }
 
 .developer-section .dev-container .dev-card img {
-  height: 200px;
+  height: 250px;
+  width: 100%;
   background: #bf312f;
   border-radius: 8px;
 }
@@ -359,8 +376,8 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #00dcf0;
-  color: #fff;
+  background: #fff;
+  color: #00dcf0;
 }
 
 .newsletter-section {
@@ -414,6 +431,10 @@ a:hover {
 footer .newsletter-section {
   background: #fff;
   padding-bottom: 40px;
+}
+
+footer .newsletter-section .button:hover {
+  color: #00dcf0;
 }
 
 footer .links-section {

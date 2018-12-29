@@ -17,7 +17,7 @@ h2 {
   letter-spacing: 3px;
   margin-top: 0px;
   padding-top: 20px;
-  text-shadow:2px 2px 5px #5050509c;
+  text-shadow:1px 1px 5px #5050509c;
 }
 h3 {
   color: #818181;
@@ -176,6 +176,17 @@ a:hover {
       p{
         color: #717171;
       }
+      .read-more{
+        &:hover{
+          background: #fff;
+          a{
+            color: #00dcf0;
+          }
+        }
+      }
+      a{
+        margin: 0;
+      }
       .button{
         background: #00dcf0;
         color: #fff;
@@ -196,7 +207,10 @@ a:hover {
   }
   .details-container {
     margin: 0 200px;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
+    .photographer{
+      text-align: end;
+    }
   }
 }
 
@@ -209,9 +223,10 @@ a:hover {
     .dev-card {
       flex: 1;
       margin: 0px 20px;
-      margin-top: 100px;
+      margin-top: 125px;
       img {
-        height: 200px;
+        height: 250px;
+        width: 100%;
         background: #bf312f;
         border-radius: 8px;
       }
@@ -263,11 +278,10 @@ a:hover {
   border: 1px solid hsl(185, 100%, 47%);
   color: #fff;
   margin-top: 10px;
-}
-.button:hover {
-  background-color: #00dcf0;
-  color: #fff;
-  
+  &:hover{
+    background: #fff;
+      color: #00dcf0;
+  }
 }
 .newsletter-section {
   text-align: center;
@@ -311,6 +325,9 @@ footer {
   .newsletter-section{
     background: #fff;
     padding-bottom: 40px;
+    .button:hover{
+      color: #00dcf0;
+    }
   }
   .links-section{
     background: #717171;
