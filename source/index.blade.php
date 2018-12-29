@@ -16,11 +16,11 @@
                     <a class="navigation-link" href="/Stories">Stories</a>
                 </li>
             </ul>
-            <ul class="nav-center">
-                <li> 
-                    <a class="logo" href="/Home">@include('_svgs/signature')</a>
-                </li>
-            </ul>
+            <div class="nav-center">
+                <a class="logo" href="/Home">
+                    @include('_svgs/signature')
+                </a>
+            </div>
             <ul class="navigation-list nav-right">
                 <li>
                     <a class="navigation-link" href="/About">About </a>

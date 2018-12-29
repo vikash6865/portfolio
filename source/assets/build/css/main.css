@@ -17,6 +17,7 @@ h2 {
   letter-spacing: 3px;
   margin-top: 0px;
   padding-top: 20px;
+  text-shadow: 2px 2px 5px #5050509c;
 }
 
 h3 {
@@ -55,7 +56,7 @@ ul {
 
 .header {
   height: 100vh;
-  background-image: url("/assets/images/cover-fade-1.jpg");
+  background-image: url("/assets/images/cover-scaled.jpg");
   background-size: cover;
 }
 
@@ -69,9 +70,9 @@ ul {
 }
 
 .nav-left {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-pack: start;
@@ -80,23 +81,22 @@ ul {
 }
 
 .nav-center {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-item-align: center a;
-      align-self: center a;
-  align-self-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav-center svg {
-  stroke: #1dcad1;
-  fill: #1dcad1;
+.nav-center .logo {
+  color: #1dcad1;
 }
 
 .nav-right {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-pack: end;
@@ -144,6 +144,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -153,17 +157,11 @@ a:hover {
   width: 25%;
 }
 
-.cover-category svg:hover {
-  fill: #00dcf0;
-  stroke: #00dcf0;
-}
-
 .cover-category .category {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  fill: #fff;
-  stroke: #fff;
+  margin-top: -80px;
 }
 
 .cover-category .category h1 {
@@ -172,7 +170,7 @@ a:hover {
   font-size: 3rem;
 }
 
-.cover-category .category:hover {
+.cover-category .category:hover svg {
   fill: #00dcf0;
   stroke: #00dcf0;
 }
@@ -197,7 +195,7 @@ a:hover {
 
 .gallery-section {
   height: 100vh;
-  background: #c6c6c6;
+  background: radial-gradient(white, gray);
 }
 
 .stories-section {
@@ -289,10 +287,11 @@ a:hover {
       -ms-flex: 1;
           flex: 1;
   margin: 0px 20px;
+  margin-top: 100px;
 }
 
 .developer-section .dev-container .dev-card img {
-  width: 100%;
+  height: 200px;
   background: #bf312f;
   border-radius: 8px;
 }
@@ -310,8 +309,7 @@ a:hover {
 }
 
 .developer-section .dev-container .mid {
-  position: relative;
-  top: -75px;
+  margin-top: 0px;
 }
 
 .contact-section {
@@ -426,24 +424,16 @@ footer .links-section h5 {
 }
 
 footer .links-section .link-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: auto;
+  margin: 10px 0;
 }
 
 footer .links-section .link-list .link-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 30px;
-  margin: 10px 0px;
+  text-align: center;
+  margin: 0 10px;
 }
 
 footer .links-section .link-list .link-item svg {
-  width: 10%;
+  width: 25px;
   stroke: #fff;
   fill: #fff;
 }
