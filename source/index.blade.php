@@ -152,6 +152,9 @@
     </div>
 </div> {{-- site-wrapper --}}
 <footer>
+    {{-- <div class="wave">
+        @include('_svgs/path')
+    </div> --}}
     <div class="newsletter-section">
         <h2  class="section-title">subscribe to our newsletter</h2   >
             <form action="#">
