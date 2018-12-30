@@ -4,5 +4,24 @@
   .gallery-section {
     height: 100vh;
     background: radial-gradient(white,gray);
+    .grid-container{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: 200px 250px;
+      grid-column-gap: 5px;
+      grid-row-gap: 10px;
+      background: $white;
+      height: 100vh;
+      .grid-item{
+        background:$secondary-color;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .one{
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
   }
   
