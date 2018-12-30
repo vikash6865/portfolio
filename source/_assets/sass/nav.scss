@@ -34,4 +34,22 @@
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-size: 1rem;
+    a{
+      font-size: 18px;
+      &:hover{
+        animation-name: strok;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+  @keyframes strok{
+    0%{
+      text-shadow: none;
+    }
+    100%{
+      text-shadow: 1px 1px 3px #00dcf0;
+      text-shadow: -1px -1px 3px #00dcf0;
+    }
   }
