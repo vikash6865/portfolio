@@ -17,6 +17,16 @@
         font-size: 3rem;
       }
     }
+    .photography h1{
+      position: relative;
+      margin-top: -10px;
+      font-family: 'gloss and bloom';
+    }
+    .development h1{
+      position: relative;
+      margin-top: 25px;
+      font-family: 'code bold';
+    }
     .category:hover{
       svg {
         fill: $primary-color; 

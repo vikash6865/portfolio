@@ -18,7 +18,7 @@
             <a href="" class="link-item">@include('_svgs/circular-stroke-brands/youtube')</a>
         </div>
         <div class="copyright">
-            <p>copyright 2018 all rights reseverd</p>
+            <p><span class="sign-logo"><a href="/index.html">@include('_svgs/signature')</a></span> copyright 2018 all rights reseverd</p>
         </div>
     </div>
     <div class="footer-section">

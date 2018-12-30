@@ -1,7 +1,7 @@
 <nav class="navigation">
     <ul class="navigation-list nav-left">
         <li>
-            <a class="navigation-link" href="/#">Home</a>
+            <a class="navigation-link" href="/index.html">Home</a>
         </li>
         <li>
             <a class="navigation-link" href="#">Galleries</a>
