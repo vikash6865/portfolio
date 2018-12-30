@@ -1,0 +1,68 @@
+.stories-section {
+    background: $white;
+    margin-bottom: 40px;
+    .stories-container {
+      display: flex;
+      margin: 40px 20px;
+      .story-card {
+        flex: 1;
+        margin: 0px 20px;
+        .place-name{
+          width: 40%;
+          color: $white;
+          background: $primary-color;
+          text-align: center;
+          float: right;
+          position: relative;
+          top: 29px;
+          padding: 5px 0;
+        }
+        img {
+          width: 100%;
+        }
+        .story-title{
+          color: $primary-color;
+        }
+        .story-date{
+          color: $tertiary-color;
+        }
+        p{
+          color: $secondary-color;
+        }
+        .read-more{
+          &:hover{
+            background: $white;
+            a{
+              color: $primary-color;
+            }
+          }
+        }
+        a{
+          margin: 0;
+        }
+        .button{
+          background: $primary-color;
+          color: $white;
+          text-align: center;
+          border-radius: 5px;
+          width: 100px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .about-section {
+    background: url("/assets/images/about.jpg");
+    background-size: cover;
+    .about {
+      text-align: center;
+      padding-top: 150px;
+    }
+    .details-container {
+      margin: 0 200px;
+      padding-bottom: 60px;
+      .photographer{
+        text-align: end;
+      }
+    }
+  }

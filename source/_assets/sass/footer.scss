@@ -1,0 +1,60 @@
+
+footer {
+    .newsletter-section {
+        text-align: center;
+        .field .button{
+          color: $white;
+        }
+        background: $white;
+          padding-bottom: 40px;
+          .button:hover{
+            color: $primary-color;
+          }
+        .field input{
+          margin: 10px auto ;
+            padding: .5rem 1rem;
+            border: $primary-color 1px solid;
+            border-radius: 3px;
+            border-color: $primary-color;
+            color: $primary-color;
+            font-weight: bold;
+        }
+      }
+    .links-section{
+      background: $secondary-color;
+      color: $white;
+      text-align: center;
+      h5{
+        margin: 0 auto;
+        padding-top: 15px; 
+        color: $white;
+        
+      }
+      .link-list{
+        margin: 10px 0; 
+        .link-item{
+          text-align: center;
+          margin: 0 10px;
+          svg{
+            width: 32px;
+            height: 32px;
+            stroke: $white;
+            fill: $white;
+          }
+          svg:hover{
+            stroke: $primary-color;
+            fill: $primary-color;
+          }
+        }
+      }
+    }
+    .copyright {
+      p{
+        text-align: end;
+        background: #606060;
+        color: $white;
+        font-size: 0.75rem;
+        padding: 5px 10px;
+      }
+    }
+  }

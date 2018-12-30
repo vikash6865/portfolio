@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+    .header {
+      height: 50vh;
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navigation-list {
+      display: block;
+    }
+    .navigation .bars {
+      display: inline-block;
+    }
+    .navigation-list .navigation-link {
+      display: none;
+    }
+    .images-grid .grid-item {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .images-grid .grid-item {
+      width: 100%;
+    }
+  }

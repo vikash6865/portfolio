@@ -1,0 +1,96 @@
+body {
+    background: $white;
+    margin: 0px;
+    padding: 0px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  h1,
+  h2 {
+    font-family: 'Caviar dreams';
+    color: $primary-color;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-top: 0px;
+    padding-top: 20px;
+    text-shadow:1px 1px 5px #5050509c;
+  }
+  h3 {
+    color: $tertiary-color;
+    font-family: 'Code Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+  }
+  h5{
+    color: $tertiary-color;
+    font-family: 'comfortaa';
+    letter-spacing: .1rem;
+  }
+  p {
+    color: $secondary-color;
+    font-family: "comfortaa light";
+  }
+  ul {
+    margin: 0px 0px;
+    padding: 0;
+  }
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .header {
+    height: 100vh;
+    background-image: url("/assets/images/cover-scaled.jpg");
+    background-size: cover;
+  }
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: default;
+    margin: 0px 25px;
+  }
+  a:active {
+    color: #1dcad1;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #1dcad1;
+    text-decoration-style: solid;
+  }
+  .section-title {
+    margin: 25px 25px ;
+    font-family: 'comfortaa';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    color: $primary-color;
+  }
+  .button {
+    background-color: $primary-color;
+    border-radius: 3px;
+    padding: 5px 10px;
+    border: 1px solid $primary-color;
+    color: $white;
+    margin-top: 10px;
+    &:hover{
+      background: $white;
+        color: $primary-color;
+    }
+  }
+  .main-img img {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    top: -150px;
+    z-index: -1;
+  }
+  .main-area {
+    background: $white;
+  }
+  .main-content {
+    flex: 1;
+  }
+  

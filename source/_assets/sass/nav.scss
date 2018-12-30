@@ -1,0 +1,37 @@
+.navigation {
+    background: #38383880;
+    background-blend-mode: multiply;
+    display:flex;
+    height: 80px
+  }
+  .nav-left {
+    flex: 1;
+    align-self: center;
+    justify-content: start
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+    .logo {
+      color: #1dcad1;
+    } 
+  }
+  .nav-right {
+    flex: 1;
+    align-self: center;
+    justify-content: end
+  }
+  .navigation .bars {
+    border: none;
+    display: none;
+  }
+  .navigation-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-family: 'caviar dreams';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+  }

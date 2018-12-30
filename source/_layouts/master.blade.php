@@ -10,4 +10,5 @@
     <body>
         @yield('body')
     </body>
+    <script></script>
 </html>

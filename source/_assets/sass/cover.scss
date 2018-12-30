@@ -1,0 +1,29 @@
+.cover-category{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    svg {
+      fill: $white;
+      stroke: $white;
+      width: 25%;
+    }
+    .category {
+      flex: 1;
+      margin-top: -80px;
+      h1 {
+        color: $white;
+        letter-spacing: .25rem;
+        font-size: 3rem;
+      }
+    }
+    .category:hover{
+      svg {
+        fill: $primary-color; 
+        stroke: $primary-color; 
+      }
+      h1{
+        color: $primary-color;
+      }
+    }
+  }
