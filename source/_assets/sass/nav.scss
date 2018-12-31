@@ -1,3 +1,4 @@
+@import "../sass/variables.scss";
 .navigation {
     background: #38383880;
     background-blend-mode: multiply;
@@ -13,7 +14,7 @@
     display: flex;
     align-items: center;
     .logo {
-      color: #1dcad1;
+      color: $primary-color;
     } 
   }
   .nav-right {
@@ -49,7 +50,7 @@
       text-shadow: none;
     }
     100%{
-      text-shadow: 1px 1px 3px #00dcf0;
-      text-shadow: -1px -1px 3px #00dcf0;
+      text-shadow: 1px 1px 5px $primary-color;
+      text-shadow: -1px -1px 5px $primary-color;
     }
   }
