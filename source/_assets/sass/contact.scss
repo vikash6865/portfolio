@@ -1,26 +1,46 @@
 .contact-section {
-    display: flex;
-    .contact-illustration {
-      flex: 1;
-      background: $primary-color;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .contact-illustration,
+  .form-container {
+    padding-bottom: 120px;
+  }
+  .contact-illustration {
+    flex: 1;
+    background: $primary-color;
+  }
+  .form-container {
+    flex: 1;
+    text-align: center;
+    background: $tertiary-color;
+    form {
+      margin-bottom: 40px;
     }
-    .form-container {
-      flex: 1;
-      text-align: center;
-      background: $tertiary-color;
-      form {
-        margin-bottom: 40px;
-      }
-      .field input,textarea{
-        width: 60%;
-        margin: 10px auto ;
-        padding: .5rem 1rem;
-        border: $primary-color 1px solid;
-        border-radius: 3px;
-        border-color: $primary-color;
-        color: $primary-color;
-        font-weight: bold;
-        box-shadow: inset 0.5px 0.5px 2px 0.2px gray;
-      }
+    .field input,
+    textarea {
+      width: 60%;
+      margin: 10px auto;
+      padding: 0.5rem 1rem;
+      border: $primary-color 1px solid;
+      border-radius: 3px;
+      border-color: $primary-color;
+      color: $primary-color;
+      font-weight: bold;
+      box-shadow: inset 0.5px 0.5px 2px 0.2px gray;
     }
   }
+
+  &::after {
+    content: "";
+    height: 120px;
+    position: absolute;
+    background-image: url("/assets/svgs/curve.svg");
+    background-size: fit;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    left: -1px;
+    right: -1px;
+    bottom: -2px;
+  }
+}

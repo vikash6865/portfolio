@@ -1,1 +1,3 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1442.5 320.68"><defs><style>.cls-1{fill:#00dcf0;}</style></defs><title>path wave</title><path class="cls-1" d="M1741,512S1407,19,1009,360s-710,0-710,0l-.5,200.5h1442Z" transform="translate(-298.5 -239.82)"/></svg>
+<svg version="1.1" viewBox="0 0 1442 321" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="m1446 274s-334-493-732-152c-398 341-710 0-710 0l-0.5 200h1442z"/>
+</svg>
