@@ -36,16 +36,31 @@ footer {
           text-align: center;
           margin: 0 10px;
           svg{
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             stroke: $white;
             fill: $white;
           }
-          svg:hover{
-            stroke: $primary-color;
-            fill: $primary-color;
-          }
-        }
+      }
+      .google>svg:hover{
+        stroke: orangered;
+        fill: orangered;
+      }
+      .facebook>svg:hover{
+        stroke: #0084FF;
+        fill:#0084FF;
+      }
+      .twitter>svg:hover{
+        stroke: #1DA1F2;
+        fill: #1DA1F2;
+      }
+      .linkedin>svg:hover{
+        stroke: #0077B5;
+        fill: #0077B5;
+      }
+      .youtube>svg:hover{
+        stroke: #c4302b;
+        fill: #c4302b;
       }
     }
     .copyright {
@@ -75,3 +90,4 @@ footer {
       }
     }
   }
+}

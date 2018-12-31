@@ -20,7 +20,7 @@
             <a class="navigation-link" href="/About">About </a>
         </li>
         <li>
-            <a class="navigation-link" href="/Contact">Contact us</a>
+            <a class="navigation-link" href="/Contact">Contact</a>
         </li>
     </ul>
     <button class="bars">

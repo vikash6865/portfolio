@@ -435,18 +435,38 @@ footer .links-section .link-list .link-item {
 }
 
 footer .links-section .link-list .link-item svg {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   stroke: #fff;
   fill: #fff;
 }
 
-footer .links-section .link-list .link-item svg:hover {
-  stroke: #0099ff;
-  fill: #0099ff;
+footer .links-section .link-list .google > svg:hover {
+  stroke: orangered;
+  fill: orangered;
 }
 
-footer .copyright p {
+footer .links-section .link-list .facebook > svg:hover {
+  stroke: #0084FF;
+  fill: #0084FF;
+}
+
+footer .links-section .link-list .twitter > svg:hover {
+  stroke: #1DA1F2;
+  fill: #1DA1F2;
+}
+
+footer .links-section .link-list .linkedin > svg:hover {
+  stroke: #0077B5;
+  fill: #0077B5;
+}
+
+footer .links-section .link-list .youtube > svg:hover {
+  stroke: #c4302b;
+  fill: #c4302b;
+}
+
+footer .links-section .copyright p {
   text-align: end;
   background: #606060;
   color: #fff;
@@ -454,23 +474,23 @@ footer .copyright p {
   padding: 10px 10px;
 }
 
-footer .copyright span {
+footer .links-section .copyright span {
   float: left;
   position: relative;
   top: -8px;
 }
 
-footer .copyright span a {
+footer .links-section .copyright span a {
   padding: 0;
   margin: 0;
 }
 
-footer .copyright span svg {
+footer .links-section .copyright span svg {
   height: 30px;
   stroke-width: 2px;
 }
 
-footer .copyright span svg:hover {
+footer .links-section .copyright span svg:hover {
   fill: #0099ff;
   stroke: #0099ff;
 }

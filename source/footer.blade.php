@@ -11,11 +11,11 @@
     <div class="links-section">
         <h5>follow:</h5>
         <div class="link-list">
-            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/google-plus')</a>
-            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/facebook')</a>
-            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/twitter')</a>
-            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/linkedin')</a>
-            <a href="" class="link-item">@include('_svgs/circular-stroke-brands/youtube')</a>
+            <a href="" class="link-item google">@include('_svgs/circular-stroke-brands/google-plus')</a>
+            <a href="" class="link-item facebook">@include('_svgs/circular-stroke-brands/facebook')</a>
+            <a href="" class="link-item twitter">@include('_svgs/circular-stroke-brands/twitter')</a>
+            <a href="" class="link-item linkedin">@include('_svgs/circular-stroke-brands/linkedin')</a>
+            <a href="" class="link-item youtube">@include('_svgs/circular-stroke-brands/youtube')</a>
         </div>
         <div class="copyright">
             <p><span class="sign-logo"><a href="/index.html">@include('_svgs/signature')</a></span> copyright 2018 all rights reseverd</p>
