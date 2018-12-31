@@ -275,6 +275,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section .contact-illustration,
+.contact-section .form-container {
+  padding-bottom: 120px;
 }
 
 .contact-section .contact-illustration {
@@ -296,10 +303,11 @@
   margin-bottom: 40px;
 }
 
-.contact-section .form-container .field input, .contact-section .form-container textarea {
+.contact-section .form-container .field input,
+.contact-section .form-container textarea {
   width: 60%;
   margin: 10px auto;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: #00dcf0 1px solid;
   border-radius: 3px;
   border-color: #00dcf0;
@@ -307,6 +315,19 @@
   font-weight: bold;
   -webkit-box-shadow: inset 0.5px 0.5px 2px 0.2px gray;
           box-shadow: inset 0.5px 0.5px 2px 0.2px gray;
+}
+
+.contact-section::after {
+  content: "";
+  height: 120px;
+  position: absolute;
+  background-image: url("/assets/svgs/curve.svg");
+  background-size: fit;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  left: -1px;
+  right: -1px;
+  bottom: -2px;
 }
 
 footer .newsletter-section {
