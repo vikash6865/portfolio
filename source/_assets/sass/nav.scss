@@ -1,10 +1,13 @@
 @import "../sass/variables.scss";
 .navigation {
-    background: #38383880;
-    background-blend-mode: multiply;
-    display:flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background: rgba( 0, 0, 0, 0.6);
+    display: flex;
     height: 80px;
-    background-attachment: fixed;
   }
   .nav-left {
     flex: 1;
@@ -35,7 +38,7 @@
     list-style: none;
     padding: 0;
     display: flex;
-    font-family: 'caviar dreams';
+    font-family: $primary-font;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.05rem;

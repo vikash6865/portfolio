@@ -1,6 +1,6 @@
 .cover-category{
     display: flex;
-    height: 100%;
+    flex: 1;
     align-items: center;
     text-align: center;
     svg {
@@ -10,22 +10,54 @@
     }
     .category {
       flex: 1;
-      margin-top: -80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
       h1 {
         color: $white;
         letter-spacing: .25rem;
         font-size: 3rem;
       }
+      &::before {
+        content: '';
+        z-index: -10;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
-    .photography h1{
+    .photography {
+      h1{
+        position: relative;
+        margin-top: -10px;
+        font-family: 'gloss and bloom';
+      }
+      &::before {
+        left: 0px;
+        right: -50px;
+        background-image: url('/assets/images/photography-section.jpg');
+      }
+    } 
+    .development {
       position: relative;
-      margin-top: -10px;
-      font-family: 'gloss and bloom';
-    }
-    .development h1{
-      position: relative;
-      margin-top: 25px;
-      font-family: 'code bold';
+      &::before {
+        left: -50px;
+        right: 0;
+        background-image: url('/assets/images/developer-section.jpg');
+        clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%);
+      }
+      h1{
+        position: relative;
+        margin-top: 25px;
+        font-family: 'code bold';
+      }
     }
     .category:hover{
       svg {
