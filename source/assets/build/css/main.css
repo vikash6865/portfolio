@@ -5,6 +5,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 80px;
+  background-attachment: fixed;
 }
 
 .nav-left {
@@ -29,6 +30,11 @@
 
 .nav-center .logo {
   color: #0099ff;
+}
+
+.nav-center svg {
+  stroke-width: 3px;
+  margin-top: 5px;
 }
 
 .nav-right {

@@ -3,7 +3,8 @@
     background: #38383880;
     background-blend-mode: multiply;
     display:flex;
-    height: 80px
+    height: 80px;
+    background-attachment: fixed;
   }
   .nav-left {
     flex: 1;
@@ -16,9 +17,10 @@
     .logo {
       color: $primary-color;
     }
-    // svg:hover{
-    //   transform: scale(1.1,1.1);
-    // }
+    svg{
+      stroke-width: 3px;
+      margin-top: 5px;
+    }
   }
   .nav-right {
     flex: 1;
