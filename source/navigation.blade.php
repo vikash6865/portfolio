@@ -19,7 +19,6 @@
         <li>
             <a class="navigation-link" href="/About">About </a>
         </li>
-        {{-- testimonials --}}
         <li>
             <a class="navigation-link" href="/Contact">Contact us</a>
         </li>

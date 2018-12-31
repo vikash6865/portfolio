@@ -15,7 +15,10 @@
     align-items: center;
     .logo {
       color: $primary-color;
-    } 
+    }
+    // svg:hover{
+    //   transform: scale(1.1,1.1);
+    // }
   }
   .nav-right {
     flex: 1;
@@ -44,13 +47,24 @@
         animation-fill-mode: both;
       }
     }
+    li:hover{
+      animation: zoom 5ms ease-in both;
+    }
   }
   @keyframes strok{
     0%{
       text-shadow: none;
     }
     100%{
-      text-shadow: 1px 1px 5px $primary-color;
-      text-shadow: -1px -1px 5px $primary-color;
+      text-shadow: 2px 2px 5px $primary-color;
+      text-shadow: -2px -2px 5px $primary-color;
+    }
+  }
+  @keyframes zoom{
+    from{
+      transform: scale(1,1);
+    }
+    to{
+      transform: scale(1.1,1.1);
     }
   }

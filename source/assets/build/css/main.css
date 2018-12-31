@@ -75,13 +75,18 @@
           animation-fill-mode: both;
 }
 
+.navigation-list li:hover {
+  -webkit-animation: zoom 5ms ease-in both;
+          animation: zoom 5ms ease-in both;
+}
+
 @-webkit-keyframes strok {
   0% {
     text-shadow: none;
   }
   100% {
-    text-shadow: 1px 1px 5px #0099ff;
-    text-shadow: -1px -1px 5px #0099ff;
+    text-shadow: 2px 2px 5px #0099ff;
+    text-shadow: -2px -2px 5px #0099ff;
   }
 }
 
@@ -90,8 +95,30 @@
     text-shadow: none;
   }
   100% {
-    text-shadow: 1px 1px 5px #0099ff;
-    text-shadow: -1px -1px 5px #0099ff;
+    text-shadow: 2px 2px 5px #0099ff;
+    text-shadow: -2px -2px 5px #0099ff;
+  }
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
 }
 
