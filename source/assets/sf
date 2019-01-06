@@ -1,0 +1,1 @@
+convert -strip -interlace Plane -gaussian-blur 0.08 -quality 60%
