@@ -71,23 +71,12 @@ footer {
         font-size: 0.75rem;
         padding: 10px 10px;
       }
-      span{
-        float: left;
-        position: relative;
-        top: -8px;
-        a{
-          padding: 0;
-          margin: 0;
-        }
-        svg{
-          height: 30px;
-          stroke-width: 2px;
-          &:hover{
-            fill: $primary-color;
-            stroke: $primary-color;
-          }
-        }
-      }
+    }
+    .logo>svg{
+      fill: $primary-color;
+      stroke: $primary-color;
+      height: 50px;
+      margin-top: 20px;
     }
   }
 }

@@ -9,6 +9,9 @@
             </form>
     </div>
     <div class="links-section">
+        <div class="logo">
+            @include('_svgs/signature')
+        </div>
         <h5>follow:</h5>
         <div class="link-list">
             <a href="" class="link-item google">@include('_svgs/circular-stroke-brands/google-plus')</a>
@@ -18,7 +21,7 @@
             <a href="" class="link-item youtube">@include('_svgs/circular-stroke-brands/youtube')</a>
         </div>
         <div class="copyright">
-            <p><span class="sign-logo"><a href="/index.html">@include('_svgs/signature')</a></span> copyright 2018 all rights reseverd</p>
+            <p>copyright 2018 all rights reseverd</p>
         </div>
     </div>
     <div class="footer-section">
